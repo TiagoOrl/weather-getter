@@ -1,10 +1,12 @@
 <resources>
     <string name="app_name">WeatherGetter</string>
     <string name="today">hoje</string>
-
     <string name="s_getCity">Buscar Cidade</string>
     <string name="s_example">Sobral</string>
+
     <string name="gps_warning">Localização está desativada!</string>
+    <string name="return_warning">Não foi possivel obter os dados!</string>
+    <string name="request_warning">Permissão para usar o GPS é necessário</string>
 
     <string name="admob_banner_test">ca-app-pub-3940256099942544/6300978111</string>
 </resources>
