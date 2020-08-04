@@ -117,14 +117,13 @@ public class MainActivity extends AppCompatActivity {
         mForecastLayoutManager = new LinearLayoutManager(this);
         iv_weatherIcon = findViewById(R.id.iv_weatherIcon);
         fab_getThroughLocation = findViewById(R.id.fab_location);
-        ad_main = findViewById(R.id.ad_main);
+//        ad_main = findViewById(R.id.ad_main);
 
         inputMethodManager = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
         inputMethodManager.hideSoftInputFromWindow(et_cityInput.getWindowToken(), 0);
 
-        AdRequest adRequest = new AdRequest.Builder().build();
-
-        ad_main.loadAd(adRequest);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        ad_main.loadAd(adRequest);
 
 
         cl_data.animate().translationX(F_ANIM_POSX).alpha(0.0f).setDuration(0);
@@ -167,9 +166,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
                         try {
                             getAndDisplayData(future.get());
-                        } catch (ExecutionException e) {
-                            e.printStackTrace();
-                        } catch (InterruptedException e) {
+                        } catch (ExecutionException | InterruptedException e) {
                             e.printStackTrace();
                         }
                     }
