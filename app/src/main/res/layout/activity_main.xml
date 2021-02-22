@@ -168,20 +168,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:srcCompat="@android:drawable/ic_menu_mylocation" />
 
-    <!-- set Banner ad position in UI layout design -->
-<!--    <com.google.android.gms.ads.AdView-->
-<!--        android:id="@+id/ad_main"-->
-<!--        android:layout_width="320dp"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_marginStart="8dp"-->
-<!--        android:layout_marginBottom="94dp"-->
-<!--        app:adSize="BANNER"-->
-<!--        app:adUnitId="@string/admob_banner_test"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-
-<!--        app:layout_constraintStart_toStartOf="parent" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
